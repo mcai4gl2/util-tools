@@ -3,7 +3,10 @@ ext {
 }
 
 ext.libraries = [
-
+    junit: [
+            'junit:junit:4.11',
+            'org.mockito:mockito-all:1.10.8'
+    ]
 ]
 
 allprojects {
@@ -13,7 +16,6 @@ allprojects {
 subprojects {
     apply plugin: 'java'
     apply plugin: 'maven-publish'
-    apply plugin: 'scala'
 
     sourceCompatibility = 1.8
     targetCompatibility = 1.8
@@ -28,8 +30,6 @@ subprojects {
 
     dependencies {
         testCompile libraries.junit
-        testCompile libraries.scala
-        testCompile libraries.scala_test
     }
 
     jar {
