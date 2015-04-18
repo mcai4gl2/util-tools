@@ -1,6 +1,7 @@
 Utility Tools
 =============
 
+[![Build Status](https://travis-ci.org/mcai4gl2/util-tools.svg)](https://travis-ci.org/mcai4gl2/util-tools)
 
 This project contains a number of common used tools such as email, ftp, etc.
 
